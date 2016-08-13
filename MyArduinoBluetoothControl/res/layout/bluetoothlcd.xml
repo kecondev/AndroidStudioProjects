@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgr" >
+    
+	<LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="wrap_content"
+    	android:layout_gravity="center"
+    	android:gravity="center" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginTop="30px">  
+
+			<ImageButton android:id="@+id/btnSecureLCD"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/connect_secure_128" 
+				android:layout_gravity="center" />
+
+			<ImageButton android:id="@+id/btnInSecureLCD"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/connect_insecure_128" 
+				android:layout_gravity="center"
+				android:layout_marginLeft="30px" />		
+								        
+	</LinearLayout>
+	    
+    <LinearLayout
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_gravity="center"
+    	android:gravity="center" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginTop="30px">  
+    	    
+	    <TextView android:id="@+id/tvtitle"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/lcd_label"
+	        android:gravity="center"
+	        android:textSize="30sp" />
+	
+	    <EditText android:id="@+id/etdata"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:textSize="30dp"
+	        android:layout_marginTop="30px"
+	        android:layout_marginLeft="15px" 
+	        android:layout_marginRight="15px" />
+        
+        <Button android:id="@+id/btnSend"
+            android:layout_width="250px"
+            android:layout_height="wrap_content"
+            android:text="@string/send"/>
+	</LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgb" >
+    
+	<LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_gravity="center"
+    	android:gravity="center" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginTop="30px">  
+
+	    	<ImageButton android:id="@+id/btnFL"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/arrowfl" 
+				android:layout_gravity="center"
+				android:layout_marginRight="15px" />
+
+			<ImageButton android:id="@+id/btnF"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/arrowf" 
+				android:layout_gravity="center"
+				android:layout_marginRight="15px" />		
+				
+			<ImageButton android:id="@+id/btnFR"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/arrowfr" 
+				android:layout_gravity="center"/>	
+								        
+	</LinearLayout>
+
+	<LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_gravity="center"
+    	android:gravity="center" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginTop="30px">  
+
+	    	<ImageButton android:id="@+id/btnL"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/arrowl" 
+				android:layout_gravity="center"
+				android:layout_marginRight="15px" />
+
+			<ImageButton android:id="@+id/btnS"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/arrows" 
+				android:layout_gravity="center"
+				android:layout_marginRight="15px" />		
+				
+			<ImageButton android:id="@+id/btnR"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/arrowr" 
+				android:layout_gravity="center" />	
+								        
+	</LinearLayout>
+
+	<LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_gravity="center"
+    	android:gravity="center" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginTop="30px">  
+
+	    	<ImageButton android:id="@+id/btnBL"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/arrowbl" 
+				android:layout_gravity="center"
+				android:layout_marginRight="15px" />
+
+			<ImageButton android:id="@+id/btnB"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/arrowb" 
+				android:layout_gravity="center"
+				android:layout_marginRight="15px" />		
+				
+			<ImageButton android:id="@+id/btnBR"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/arrowbr" 
+				android:layout_gravity="center" />	
+								        
+	</LinearLayout>			   
+	
+	<LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="wrap_content"
+    	android:layout_gravity="center"
+    	android:gravity="center" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginTop="30px">  
+
+			<ImageButton android:id="@+id/btnSecureController"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/connect_secure_128" 
+				android:layout_gravity="center" />
+
+			<ImageButton android:id="@+id/btnInSecureController"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/connect_insecure_128" 
+				android:layout_gravity="center"
+				android:layout_marginLeft="30px" />		
+								        
+	</LinearLayout>	
+	
+	<LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="wrap_content"
+    	android:layout_gravity="center"
+    	android:gravity="center" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginTop="10px">  	
+    	
+	    <TextView android:id="@+id/tvBluetoothInfo"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/bluetoothInfo"
+	        android:gravity="center"
+	        android:textSize="20sp" />
+	    	    
+	</LinearLayout>	    	
+	
+</LinearLayout>

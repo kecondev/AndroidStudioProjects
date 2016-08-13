@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Arduino Controller</string>
+
+    <!--  MyArduinoBluetoothControlActivity -->
+    <string name="bluetoothstatusinfooff">Bluetooth : OFF</string>
+    <string name="bluetoothstatusinfoon">Bluetooth : ON</string>
+    <string name="bluetoothdeviceinfonone">Paired Device : NONE</string>
+    <string name="bluetoothdeviceinfo">Paired Device : <xliff:g id="device_name">%1$s</xliff:g></string>      
+    
+    <!--  BluetoothChat -->
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">not connected</string>
+    <string name="info_not_use">블루투스를 이용할 수 없습니다.</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Options Menu -->
+    <string name="secure_connect">Connect a device - Secure</string>
+    <string name="insecure_connect">Connect a device - Insecure</string>
+    <string name="discoverable">Make discoverable</string>
+    
+    <!--  BluetoothThermometerActivity -->
+    <string name="thermometer_title">Thermometer</string>
+    <string name="thermometer_cuttent">현재 온도</string>
+    
+    <!--  BluetoothLCDActivity -->
+    <string name="lcd_title">LCD 입력</string>
+    <string name="lcd_label">LCD 내용</string>
+    <string name="send">Send</string>    
+    
+	<!--  BluetoothControllerActivity -->
+    <string name="controller_title">Bluetooth Controller</string>
+    <string name="bluetoothInfo">Bluetooth 연결정보 : 연결안됨</string>       
+    
+</resources>
