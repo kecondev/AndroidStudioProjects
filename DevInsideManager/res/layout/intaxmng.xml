@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main"    
+    android:gravity="top|center_horizontal"
+    >
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/InfoT" 
+	    android:gravity="center" 
+	    android:layout_marginTop="30sp" 
+	    android:textStyle="bold" 
+	    android:textSize="25sp"/>
+	<TableLayout 
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal" 
+    	android:layout_margin="20sp" >
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/tvDateT"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="22sp"
+	            android:text="매입일자" />
+	        <EditText
+	        	android:id="@+id/etDateT"
+	            android:layout_column="1"
+	            android:layout_width="240sp"
+	            android:layout_height="wrap_content"
+	            android:inputType="date"
+	            android:hint="매입일자를 입력하세요.">	            
+	        </EditText>		        
+	    </TableRow>   
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/tvBizNoT"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="22sp"
+	            android:text="사업자번호" />
+	        <EditText
+	        	android:id="@+id/etBizNoT"
+	            android:layout_column="1"
+	            android:layout_width="240sp"
+	            android:layout_height="wrap_content"
+	            android:inputType="number" 
+	            android:hint="숫자 10자리 입력." 
+	            android:maxLength="10">
+	        	<requestFocus />
+	        </EditText>		        
+	    </TableRow>   	    
+		<TableRow>
+	        <TextView
+	            android:id="@+id/tvBizNameT"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="22sp"
+	            android:text="사업자명" />	    
+	        <EditText
+	        	android:id="@+id/etBizNameT"
+	            android:layout_column="1"
+	            android:layout_width="240sp"
+	            android:layout_height="wrap_content"
+	            android:focusableInTouchMode="true" 
+	            android:hint="사업자명을 입력하세요." />	                
+	    </TableRow> 
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/tvMoneyT"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="22sp"
+	            android:text="과세금액" />
+	        <EditText
+	        	android:id="@+id/etMoneyT"
+	            android:layout_column="1"
+	            android:layout_width="240sp"
+	            android:layout_height="wrap_content"
+	            android:inputType="number" 
+	            android:hint="과세금액을 입력하세요." />		        
+	    </TableRow>   
+		<TableRow>
+	        <TextView
+	            android:id="@+id/tvTaxT"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="22sp"
+	            android:text="부가세액" />	 
+	        <EditText
+	        	android:id="@+id/etTaxT"
+	            android:layout_column="1"
+	            android:layout_width="240sp"
+	            android:layout_height="wrap_content"
+	            android:inputType="number" 
+	            android:hint="부가세액을 입력하세요." />		                   
+	    </TableRow> 	  
+   		<TableRow>
+   			<Button
+   				android:id="@+id/btSendT"
+	            android:layout_column="1"
+	            android:layout_width="240sp"
+	            android:layout_height="wrap_content"
+	            android:text="전송" />	
+   		</TableRow>  	    
+	</TableLayout>	
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:text="아껴야 잘산다...아끼자...^^" 
+	    android:gravity="center" 
+	    android:layout_margin="20sp" 
+	    android:textStyle="bold" 
+	    android:textSize="23sp"/>
+</LinearLayout>

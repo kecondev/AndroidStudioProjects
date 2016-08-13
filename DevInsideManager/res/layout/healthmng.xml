@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/main" 
+    android:gravity="top|center_horizontal">
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/healthmng_info" 
+	    android:gravity="center" 
+	    android:layout_marginTop="20dp" 
+	    android:layout_marginBottom="5dp" 
+	    android:textStyle="bold" 
+	    android:textSize="22sp"/>
+	<TableLayout 
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal" 
+	    android:layout_margin="10dp" >
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/tvHealthDate"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20sp"
+	            android:text="@string/healthmng_date" />
+	        <EditText
+	        android:id="@+id/etHealthDate"
+	            android:layout_column="1"
+	            android:layout_width="195dp"
+	            android:layout_height="wrap_content"
+	            android:inputType="date" 
+	            android:enabled="false"/>	            
+	    </TableRow>   
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/tvWeight"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20sp"
+	            android:text="@string/healthmng_weight" />
+	        <EditText
+	        android:id="@+id/etWeight"
+	            android:layout_column="1"
+	            android:layout_width="195dp"
+	            android:layout_height="wrap_content"
+	            android:inputType="numberDecimal" 
+	            android:maxLength="10">
+	        <requestFocus />
+	        </EditText>	        
+	    </TableRow>   	    
+		<TableRow>
+	        <TextView
+	            android:id="@+id/tvPushUp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20sp"
+	            android:text="@string/healthmng_pushup" />	    
+	        <EditText
+	        android:id="@+id/etPushUp"
+	            android:layout_column="1"
+	            android:layout_width="195dp"
+	            android:layout_height="wrap_content"
+	            android:inputType="number" 
+	            android:focusableInTouchMode="true" />	                
+	    </TableRow> 
+	    <TableRow>
+	        <TextView 
+	            android:id="@+id/tvSitUp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20sp"
+	            android:text="@string/healthmng_situp" />
+	        <EditText 
+	            android:id="@+id/etSitUp"
+	            android:layout_column="1"
+	            android:layout_width="195dp"
+	            android:layout_height="wrap_content"
+	            android:inputType="number" 
+	            android:focusableInTouchMode="true" />
+	    </TableRow>
+	    <TableRow>
+	        <TextView 
+	            android:id="@+id/tvCycleTime"
+				android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20sp"
+	            android:text="@string/healthmng_cycle_time" />
+	        <EditText 
+	            android:id="@+id/etCycleTime"
+	            android:layout_column="1"
+	            android:layout_width="195dp"
+	            android:layout_height="wrap_content"
+	            android:inputType="number" 
+	            android:focusableInTouchMode="true" />	            
+	    </TableRow>
+	    <TableRow>
+	        <TextView 
+	            android:id="@+id/tvCycleDist"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20sp"
+	            android:text="@string/healthmng_cycle_distance" />
+	        <EditText
+	            android:id="@+id/etCycleDist"
+	            android:layout_column="1"
+	            android:layout_width="195dp"
+	            android:layout_height="wrap_content"
+	            android:inputType="numberDecimal" 
+	            android:maxLength="10"
+	            android:focusableInTouchMode="true" />	 "
+	    </TableRow>
+	   
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="1dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="10dp"
+	        android:background="#ffffff">
+		</LinearLayout>
+	   
+	    <TableRow>
+	        <TextView 
+	            android:id="@+id/tvWeightAvg"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20sp"
+	            android:text="@string/weightavg" />
+	        <TextView 
+	            android:id="@+id/tvWeightAvgD"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20sp"
+	            android:text="@string/common_blank" />	 
+	    </TableRow>	    
+	    <TableRow android:layout_marginTop="10dp">
+	        <TextView 
+	            android:id="@+id/tvPushUpAvg"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20sp"
+	            android:text="@string/pushupavg" />
+	        <TextView 
+	            android:id="@+id/tvPushUpAvgD"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20sp"
+	            android:text="@string/common_blank" />	 
+	    </TableRow>
+	    <TableRow android:layout_marginTop="10dp">
+	        <TextView 
+	            android:id="@+id/tvCycleDistSum"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20sp"
+	            android:text="@string/cycledistsum" />
+	        <TextView 
+	            android:id="@+id/tvCycleDistSumD"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20sp"
+	            android:text="@string/common_blank" />	 
+	    </TableRow>
+	   
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="2dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp">
+		</LinearLayout>
+	   
+	   <TableRow>
+	   <Button
+	   android:id="@+id/btnSend"
+	            android:layout_column="1"
+	            android:layout_width="195dp"
+	            android:layout_height="wrap_content"
+	            android:text="@string/common_btn_send" />
+	   </TableRow>  	    
+	</TableLayout>	    
+</LinearLayout>

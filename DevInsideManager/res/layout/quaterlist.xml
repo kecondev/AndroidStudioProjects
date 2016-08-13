@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <LinearLayout
+  		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"  
+ 		android:orientation="horizontal"
+ 		android:gravity="center_horizontal"
+ 		android:background = "#777"
+ 		android:layout_marginTop ="2dip"
+ 		android:padding ="5dip">
+ 		<EditText
+ 			android:id="@+id/etYear"  
+ 			android:layout_width="80sp"
+ 			android:layout_height="wrap_content"
+ 			android:inputType="number" 
+	        android:maxLength="4" 
+	        android:layout_marginLeft ="3dip" />
+ 		<TextView 
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"
+ 			android:layout_marginLeft ="6dip"
+ 			android:textSize="20sp"
+ 			android:text="년도" /> 			
+		<Spinner
+		    android:id="@+id/spQuater"
+		    android:layout_column="1"
+		    android:layout_width="150sp"
+		    android:layout_height="wrap_content"
+		    android:drawSelectorOnTop="true"
+		    android:layout_marginLeft ="3dip" />  
+		<Button
+			android:id="@+id/btSearchQ"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="조회" />
+  </LinearLayout>
+
+  <ScrollView 
+	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content">
+  <LinearLayout
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"	
+  	android:orientation="vertical">
+  <LinearLayout
+  	android:id="@+id/lya1"
+  	android:layout_width="fill_parent"
+  	android:layout_height="150sp" 
+	android:background = "#555"
+	android:orientation="vertical"
+	android:layout_marginTop ="3dip">
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvAFQ"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold"/> 	
+	 		<TextView 
+	 			android:id="@+id/tvAFK"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	 			
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvAFM"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvAFV"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp" /> 	
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	 			
+	 		<TextView 
+	 			android:id="@+id/tvAFS"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	 	 			 			
+  	</LinearLayout>  	
+  </LinearLayout>    
+  	
+  <LinearLayout
+  	android:id="@+id/lya2"
+  	android:layout_width="fill_parent"
+  	android:layout_height="150sp"  	
+	android:background = "#555"
+	android:orientation="vertical"
+	android:layout_marginTop ="3dip">
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvASQ"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvASK"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	 			
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvASM"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvASV"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp" /> 	
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	 			
+	 		<TextView 
+	 			android:id="@+id/tvASS"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	 	 			 			
+  	</LinearLayout>  	
+  </LinearLayout>   
+
+  <LinearLayout
+  	android:id="@+id/lya3"
+  	android:layout_width="fill_parent"
+  	android:layout_height="150sp" 
+	android:background = "#555"
+	android:orientation="vertical"
+	android:layout_marginTop ="3dip">
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvATQ"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvATK"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	 			
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvATM"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvATV"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp" /> 	
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	 			
+	 		<TextView 
+	 			android:id="@+id/tvATS"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	 	 			 			
+  	</LinearLayout>  	
+  </LinearLayout>  
+
+  <LinearLayout
+  	android:id="@+id/lyas"
+  	android:layout_width="fill_parent"
+  	android:layout_height="150sp" 
+	android:orientation="vertical"
+	android:layout_marginTop ="3dip">
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvASTQ"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvASTK"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	 			
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvASTM"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvASTV"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp" /> 	
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	 			
+	 		<TextView 
+	 			android:id="@+id/tvASTS"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	 	 			 			
+  	</LinearLayout>  	
+  </LinearLayout>  
+        	
+  <LinearLayout
+  	android:id="@+id/lyb1"
+  	android:layout_width="fill_parent"
+  	android:layout_height="150sp" 
+	android:background = "#555"
+	android:orientation="vertical"
+	android:layout_marginTop ="3dip">
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvBFQ"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvBFK"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	 			
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvBFM"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvBFV"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp" /> 	
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	 			
+	 		<TextView 
+	 			android:id="@+id/tvBFS"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	 	 			 			
+  	</LinearLayout>  	
+  </LinearLayout>    
+  	
+  <LinearLayout
+  	android:id="@+id/lyb2"
+  	android:layout_width="fill_parent"
+  	android:layout_height="150sp" 
+	android:background = "#555"
+	android:orientation="vertical"
+	android:layout_marginTop ="3dip">
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvBSQ"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvBSK"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	 			
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvBSM"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvBSV"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp" /> 	
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	 			
+	 		<TextView 
+	 			android:id="@+id/tvBSS"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	 	 			 			
+  	</LinearLayout>  	
+  </LinearLayout>   
+
+  <LinearLayout
+  	android:id="@+id/lyb3"
+  	android:layout_width="fill_parent"
+  	android:layout_height="150sp" 
+	android:background = "#555"
+	android:orientation="vertical"
+	android:layout_marginTop ="3dip">
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvBTQ"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvBTK"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	 			
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvBTM"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvBTV"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp" /> 	
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	 			
+	 		<TextView 
+	 			android:id="@+id/tvBTS"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	 	 			 			
+  	</LinearLayout>  	
+  </LinearLayout>  
+
+  <LinearLayout
+  	android:id="@+id/lybs"
+  	android:layout_width="fill_parent"
+  	android:layout_height="150sp" 
+	android:orientation="vertical"
+	android:layout_marginTop ="3dip">
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvBSTQ"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvBSTK"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	 			
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvBSTM"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvBSTV"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp" /> 	
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	 			
+	 		<TextView 
+	 			android:id="@+id/tvBSTS"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	 	 			 			
+  	</LinearLayout>  	
+  </LinearLayout>  
+
+  <LinearLayout
+  	android:id="@+id/lys"
+  	android:layout_width="fill_parent"
+  	android:layout_height="150sp" 
+	android:orientation="vertical"
+	android:layout_marginTop ="3dip">
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvSTQ"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvSTK"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp"
+	 			android:textStyle="bold" /> 	 			
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	
+	 		<TextView 
+	 			android:id="@+id/tvSTM"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	
+	 		<TextView 
+	 			android:id="@+id/tvSTV"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginLeft ="10dip"
+	 			android:textSize="20sp" /> 	
+  	  </LinearLayout>
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:padding ="5dip"> 	 			
+	 		<TextView 
+	 			android:id="@+id/tvSTS"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:textSize="20sp" /> 	 	 			 			
+  	</LinearLayout>  	
+  </LinearLayout>
+      
+  </LinearLayout> 
+  </ScrollView>      	
+</LinearLayout>  

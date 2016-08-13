@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main"    
+    android:gravity="top|center_horizontal"
+    >
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/InfoED" 
+	    android:gravity="center" 
+	    android:layout_marginTop="20sp" 
+	    android:textStyle="bold" 
+	    android:textSize="23sp"/>
+	<TableLayout 
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal" 
+    	android:layout_margin="20sp" >
+	   <TableRow>
+	        <TextView
+	            android:id="@+id/tvDateED"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:textSize="22sp"
+	            android:text="매입일자" />
+	        <LinearLayout 
+	            android:layout_column="1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">	        
+		        <EditText
+		        	android:id="@+id/etDateED"
+		            android:layout_column="1"
+		            android:layout_width="150sp"
+		            android:layout_height="wrap_content"
+		            android:inputType="date" />	 
+				<Button
+	   				android:id="@+id/btnToDay"
+		            android:layout_width="70sp"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10sp"
+		            android:text="@string/incredited_btntoday" />	
+	        </LinearLayout> 	                       
+       
+	    </TableRow>   
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/tvBizNoED"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="22sp"
+	            android:text="사업자번호" />
+	        <EditText
+	        	android:id="@+id/etBizNoED"
+	            android:layout_column="1"
+	            android:layout_width="240sp"
+	            android:layout_height="wrap_content"
+	            android:inputType="number" 
+	            android:hint="숫자 10자리 입력" 
+	            android:maxLength="10">
+	        	<requestFocus />
+	        </EditText>		        
+	    </TableRow>   	    
+		<TableRow>
+	        <TextView
+	            android:id="@+id/tvBizNameED"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="22sp"
+	            android:text="사업자명" />	    
+	        <EditText
+	        	android:id="@+id/etBizNameED"
+	            android:layout_column="1"
+	            android:layout_width="240sp"
+	            android:layout_height="wrap_content"
+	            android:focusableInTouchMode="true" 
+	            android:hint="사업자명을 입력하세요." />	                
+	    </TableRow> 
+		<TableRow>
+	        <TextView
+	            android:id="@+id/tvCreditED"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="22sp"
+	            android:text="신용카드" />	
+			<Spinner
+			   android:id="@+id/spCreditED"
+			   android:layout_column="1"
+			   android:layout_width="fill_parent"
+			   android:layout_height="wrap_content"
+			   android:drawSelectorOnTop="true"/> 		                    
+	    </TableRow> 
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/tvMoneyED"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="22sp"
+	            android:text="과세금액" />
+	        <EditText
+	        	android:id="@+id/etMoneyED"
+	            android:layout_column="1"
+	            android:layout_width="240sp"
+	            android:layout_height="wrap_content"
+	            android:inputType="number" 
+	            android:hint="과세금액을 입력하세요." />		        
+	    </TableRow>   
+		<TableRow>
+	        <TextView
+	            android:id="@+id/tvTaxED"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="22sp"
+	            android:text="부가세액" />	 
+	        <EditText
+	        	android:id="@+id/etTaxED"
+	            android:layout_column="1"
+	            android:layout_width="240sp"
+	            android:layout_height="wrap_content"
+	            android:inputType="number" 
+	            android:hint="부가세액을 입력하세요." />		                   
+	    </TableRow> 	  	    
+	</TableLayout>	
+	<LinearLayout android:layout_width="fill_parent" 
+	    		  android:layout_height="wrap_content" 
+	    		  android:orientation="horizontal"
+	    		  android:gravity ="center">
+   			<Button
+   				android:id="@+id/btRegED"
+	            android:layout_width="100sp"
+	            android:layout_height="wrap_content"
+	            android:text="@string/common_btn_reg" />		
+   			<Button
+   				android:id="@+id/btEditED"
+	            android:layout_width="100sp"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10sp"
+	            android:text="@string/common_btn_edit" />	
+   			<Button
+   				android:id="@+id/btDelED"
+	            android:layout_width="100sp"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10sp"
+	            android:text="@string/common_btn_del" />	
+	</LinearLayout>
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:text="아껴야 잘산다...아끼자...^^" 
+	    android:gravity="center" 
+	    android:layout_margin="20sp" 
+	    android:textStyle="bold" 
+	    android:textSize="23sp"/>
+</LinearLayout>

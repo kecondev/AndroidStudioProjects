@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@drawable/main">
+    
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="wrap_content"
+    	android:layout_gravity="center"
+    	android:gravity="center" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginTop="20sp">   
+    	 
+	    <LinearLayout
+	    	android:orientation="vertical"
+	    	android:layout_width="wrap_content"
+	    	android:layout_gravity="center_vertical" 
+	    	android:layout_height="fill_parent">
+			<ImageButton android:id="@+id/btnCreditM"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/credit" 
+				android:layout_gravity="center" />
+		    <TextView
+		        android:id="@+id/tvCreditInfo"
+		        android:layout_height="wrap_content"
+		        android:textSize="20sp"
+		        android:layout_marginBottom="30sp"
+		        android:text="@string/main_credittitle" 
+		        android:layout_width="160sp" 
+		        android:layout_gravity="center" 
+		        android:gravity="center"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	    	android:orientation="vertical"
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="fill_parent" 
+	    	android:layout_gravity="center_vertical">	    
+			<ImageButton android:id="@+id/btnCreditList"	
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/creditlist"
+				android:layout_gravity="center" />	 
+		    <TextView
+		        android:id="@+id/tvCreditListInfo"
+		        android:layout_height="wrap_content"
+		        android:textSize="20sp"
+		        android:text="@string/main_creditlist" 
+		        android:layout_width="160sp" 
+		        android:layout_gravity="center" 
+		        android:gravity="center"/>	
+	    </LinearLayout>
+	    
+	</LinearLayout>    
+	
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="wrap_content"
+    	android:layout_gravity="center"
+    	android:gravity="center" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginTop="5sp">   
+    	 
+	    <LinearLayout
+	    	android:orientation="vertical"
+	    	android:layout_width="wrap_content"
+	    	android:layout_gravity="center_vertical" 
+	    	android:layout_height="fill_parent">
+			<ImageButton android:id="@+id/btnTaxM"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/tax" 
+				android:layout_gravity="center" />
+		    <TextView
+		        android:id="@+id/tvTaxInfo"
+		        android:layout_height="wrap_content"
+		        android:textSize="20sp"
+		        android:layout_marginBottom="20sp"
+		        android:text="@string/main_taxtitle" 
+		        android:layout_width="160sp" 
+		        android:layout_gravity="center" 
+		        android:gravity="center"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	    	android:orientation="vertical"
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="fill_parent" 
+	    	android:layout_gravity="center_vertical">	    
+			<ImageButton android:id="@+id/btnTaxList"	
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/taxlist"
+				android:layout_gravity="center" />	 
+		    <TextView
+		        android:id="@+id/tvTaxListInfo"
+		        android:layout_height="wrap_content"
+		        android:textSize="20sp"
+		        android:text="@string/main_taxlist" 
+		        android:layout_width="160sp" 
+		        android:layout_gravity="center" 
+		        android:gravity="center"/>	
+	    </LinearLayout>
+	    
+	</LinearLayout>   
+		      	           
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="wrap_content"
+    	android:layout_gravity="center"
+    	android:gravity="center" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginTop="5sp">   
+    	 
+	    <LinearLayout
+	    	android:orientation="vertical"
+	    	android:layout_width="wrap_content"
+	    	android:layout_gravity="center_vertical" 
+	    	android:layout_height="fill_parent">
+			<ImageButton android:id="@+id/btnQuaterInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/quaterlist" 
+				android:layout_gravity="center" />
+		    <TextView
+		        android:id="@+id/tvQuaterInfo"
+		        android:layout_height="wrap_content"
+		        android:textSize="20sp"
+		        android:layout_marginBottom="20sp"
+		        android:text="@string/main_quatertitle" 
+		        android:layout_width="160sp" 
+		        android:layout_gravity="center" 
+		        android:gravity="center"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	    	android:orientation="vertical"
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="fill_parent" 
+	    	android:layout_gravity="center_vertical">	    
+			<ImageButton android:id="@+id/btnVisitCnt"	
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:src="@drawable/health"
+				android:layout_gravity="center" />	 
+		    <TextView
+		        android:id="@+id/tvVisitCnt"
+		        android:layout_height="wrap_content"
+		        android:textSize="20sp"
+		        android:text="@string/main_health_title" 
+		        android:layout_width="160sp" 
+		        android:layout_gravity="center" 
+		        android:gravity="center"/>	
+	    </LinearLayout>
+	    
+	</LinearLayout> 
+			      	           
+</LinearLayout>

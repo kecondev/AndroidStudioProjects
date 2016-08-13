@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main"    
+    android:gravity="top|center_horizontal"
+    >
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/Info" 
+	    android:gravity="center" 
+	    android:layout_marginTop="30sp" 
+	    android:textStyle="bold" 
+	    android:textSize="25sp"/>
+	<TableLayout 
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal" 
+    	android:layout_margin="20sp" >
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/tvDate"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="22sp"
+	            android:text="매입일자" />
+	        <EditText
+	        	android:id="@+id/etDate"
+	            android:layout_column="1"
+	            android:layout_width="240sp"
+	            android:layout_height="wrap_content"
+	            android:inputType="date"
+	            android:hint="매입일자를 입력하세요.">	            
+	        </EditText>		        
+	    </TableRow>   
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/tvBizNo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="22sp"
+	            android:text="사업자번호" />
+	        <EditText
+	        	android:id="@+id/etBizNo"
+	            android:layout_column="1"
+	            android:layout_width="240sp"
+	            android:layout_height="wrap_content"
+	            android:inputType="number" 
+	            android:hint="숫자 10자리 입력." 
+	            android:maxLength="10">
+	        	<requestFocus />
+	        </EditText>		        
+	    </TableRow>   	    
+		<TableRow>
+	        <TextView
+	            android:id="@+id/tvBizName"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="22sp"
+	            android:text="사업자명" />	    
+	        <EditText
+	        	android:id="@+id/etBizName"
+	            android:layout_column="1"
+	            android:layout_width="240sp"
+	            android:layout_height="wrap_content"
+	            android:focusableInTouchMode="true" 
+	            android:hint="사업자명을 입력하세요." />	                
+	    </TableRow> 
+		<TableRow>
+	        <TextView
+	            android:id="@+id/tvCredit"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="22sp"
+	            android:text="신용카드" />	
+			<Spinner
+			   android:id="@+id/spCredit"
+			   android:layout_column="1"
+			   android:layout_width="fill_parent"
+			   android:layout_height="wrap_content"
+			   android:drawSelectorOnTop="true"/> 		                    
+	    </TableRow> 
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/tvMoney"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="22sp"
+	            android:text="과세금액" />
+	        <EditText
+	        	android:id="@+id/etMoney"
+	            android:layout_column="1"
+	            android:layout_width="240sp"
+	            android:layout_height="wrap_content"
+	            android:inputType="number" 
+	            android:hint="@string/increditmng_etmoney_hint" />		        
+	    </TableRow>   
+		<TableRow>
+	        <TextView
+	            android:id="@+id/tvTax"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:textSize="22sp"
+	            android:text="@string/increditmng_tvtax" />	
+	        <LinearLayout 
+	            android:layout_column="1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+		        <EditText
+		        	android:id="@+id/etTax"		            
+		            android:layout_width="150sp"
+		            android:layout_height="wrap_content"
+		            android:inputType="number" 
+		            android:hint="@string/increditmng_ettax_hint" />	
+				<Button
+	   				android:id="@+id/btnValueCompute"
+		            android:layout_width="80sp"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10sp"
+		            android:text="@string/increditmng_valuecompute" />	
+	        </LinearLayout> 	            	                   
+	    </TableRow> 	  
+   		<TableRow>
+   			<Button
+   				android:id="@+id/btSend"
+	            android:layout_column="1"
+	            android:layout_width="100sp"
+	            android:layout_height="wrap_content"
+	            android:text="@string/increditmng_send" />	
+   		</TableRow>  	    
+	</TableLayout>	
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/increditmng_bottom_info"  
+	    android:gravity="center" 
+	    android:layout_margin="20sp" 
+	    android:textStyle="bold" 
+	    android:textSize="27sp"/>
+</LinearLayout>
