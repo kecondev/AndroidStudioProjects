@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_btn_send">전송</string>
+    <string name="common_btn_reg">등록</string>
+    <string name="common_btn_edit">수정</string>
+    <string name="common_btn_del">삭제</string>
+    <string name="common_blank"></string>
+
+    <string name="main_health_title">건강관리</string>
+    <string name="main_mycar_title">차계부</string>
+    <string name="main_creditlist">신용카드 목록</string>
+    <string name="main_taxtitle">세금계산서 관리</string>
+    <string name="main_taxlist">세금계산서 목록</string>
+    <string name="main_quatertitle">분기별 합계 목록</string>
+
+    <string name="Info"> 매입 신용카드전표 등록 화면입니다.</string>
+    <string name="InfoT">매입 세금계산서 등록 화면입니다.</string>
+    <string name="InfoED">매입 신용카드전표 수정/삭제 화면입니다.</string>
+    <string name="app_name">데브인사이드</string>
+
+    <string name="healthmng_info">매일매일 열심히 운동하자!!!</string>
+    <string name="healthmng_date">운동일자</string>
+    <string name="healthmng_weight">몸무게</string>
+    <string name="healthmng_pushup">팔굽혀펴기</string>
+    <string name="healthmng_situp">윗몸일으키기</string>
+    <string name="healthmng_flank">Flank</string>
+    <string name="healthmng_cycle_distance">자전거거리</string>
+    <string name="healthmng_cycle_time">자전거시간</string>
+    <string name="weightavg">평균몸무게</string>
+    <string name="pushupavg">평균팔굽혀펴기</string>
+    <string name="cycledistsum">자전거거리합계</string>
+    <string name="healthmng_save_success">저장되었습니다.</string>
+    <string name="healthmng_save_fail">오류가 발생 되었습니다.</string>
+
+    <string name="increditmng_bottom_info">아껴야 잘산다. 아끼자!^^</string>
+    <string name="increditmng_valuecompute">계산</string>
+    <string name="increditmng_send">전송</string>
+    <string name="increditmng_ettax_hint">부가세액</string>
+    <string name="increditmng_tvtax">부가세액</string>
+    <string name="increditmng_etmoney_hint">과세금액을 입력하세요.</string>
+
+    <string name="incredited_btntoday">오늘</string>
+    <string name="incredited_title">신용카드 매입전표 목록</string>
+</resources>

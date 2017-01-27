@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hello</string>
+
+    <string name="hello_world1">안녕 ^^ 안드로이드!</string>
+    <string name="hello_world2">Hi ^^ Android!</string>
+    <string name="action_settings">Settings</string>
+</resources>
