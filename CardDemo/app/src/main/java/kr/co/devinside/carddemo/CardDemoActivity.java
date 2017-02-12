@@ -1,6 +1,8 @@
 package kr.co.devinside.carddemo;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -20,6 +22,10 @@ public class CardDemoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_card_demo);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+        collapsingToolbarLayout.setTitle("My Toolbar Title");
+        collapsingToolbarLayout.setContentScrimColor(Color.GREEN);
 
         recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
 
